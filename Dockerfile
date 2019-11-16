@@ -9,6 +9,8 @@ ARG NPM_REG
 RUN npm install -g loopback-cli $NPM_REG && \
     npm install -g nodemon $NPM_REG && \
     npm cache clear --force
+USER node
+WORKDIR /home/node
 
 CMD ["lb"]
 
