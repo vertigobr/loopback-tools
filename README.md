@@ -7,5 +7,6 @@ Criar alias:
 
 ```sh
 alias lb4='docker run --rm -ti -v $(pwd):/src -w /src vertigo/loopback-tools:latest lb4'
+alias lb3='docker run --rm -ti -v $(pwd):/src -w /src vertigo/loopback-tools:lb3 lb'
 ```
 
