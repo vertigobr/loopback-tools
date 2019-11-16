@@ -6,9 +6,9 @@ FROM node:10
 ARG NPM_REG
 
 # loopback cli tool
-RUN npm install -g @loopback/cli $NPM_REG && \
+RUN npm install -g loopback-cli $NPM_REG && \
     npm install -g nodemon $NPM_REG && \
     npm cache clear --force
 
-CMD ["lb4"]
+CMD ["lb"]
 

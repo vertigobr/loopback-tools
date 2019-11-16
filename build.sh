@@ -6,4 +6,4 @@ NPM_REG=
 
 docker build \
     --build-arg NPM_REG="$NPM_REG" \
-    -t vertigo/loopback-tools .
+    -t vertigo/loopback-tools:lb3 .
